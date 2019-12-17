@@ -37,7 +37,7 @@ Using my custom profiles allows for finer grain control over quality and framera
 
 ### Naming Convensions
 
-Profiles use the format: <letter><number>
+Profiles use the format: \<letter\>\<number\>
 
 The _letter_ referring to the video's __quality level__ and the _number_ the __FPS (frames per second)__.
 
