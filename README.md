@@ -26,6 +26,10 @@ If you run into playback issues then remove the first 5 lines and save changes t
 ### Custom Profiles
 This config uses specific naming convensions for shorter easier typing.
 
+By default MPV plays video streams at the highest available quality.
+
+Using my custom profiles allows for finer grain control over quality and framerate.
+
 __Naming Convensions:__
 
 L = Low, M = Medium, H = High
