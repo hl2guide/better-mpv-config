@@ -32,7 +32,7 @@ L = Low, M = Medium, H = High
 
 Low = 720p, Medium = 1080p, High = 2160p (4K)
 
-60 = 60 frames per second, 30 = 30 frames per second
+30 = 30 frames per second, 60 = 60 frames per second
 
 __Use the "profile" switch__
 
