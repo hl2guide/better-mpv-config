@@ -1,12 +1,17 @@
 # better-mpv-config
-An improved MPV Player configuration file with useful defaults and profiles and no additional cruft.
+An improved MPV Player configuration file with:
+- useful defaults
+- profiles
+- no additional cruft...
 
 Requires official MPV Player: https://mpv.io/
 
-## Windows Users
+## Configuration
+
+### Windows Users
 Save to the file %APPDATA%/mpv/mpv.conf
 
-## Linux Users
+### Linux Users
 You can put all of the options in configuration files which will be read every time mpv is run.
 
 The system-wide configuration file 'mpv.conf' is in your configuration directory (e.g. /etc/mpv or /usr/local/etc/mpv).
@@ -19,18 +24,22 @@ Save to the correct location (as above) for your Operating System.
 
 Next time MPV is launched, and thereafter the settings should load. (command line or GUI)
 
-## Vital Notes
+### Vital Notes
 
-If you run into playback issues then remove the first 5 lines and save changes to the file.
+If you run into playback issues then remove the __first 5 lines__ and save changes to the file.
 
-### Custom Profiles
+## Custom Profiles
 This config uses specific naming convensions for shorter easier typing.
 
 By default MPV plays video streams at the highest available quality.
 
 Using my custom profiles allows for finer grain control over quality and framerate.
 
-__Naming Convensions:__
+### Naming Convensions
+
+Profiles use the format: <letter><number>
+
+The _letter_ referring to the video's __quality level__ and the _number_ the __FPS (frames per second)__.
 
 | 480p | 720p | 1080p | 1440p (2.5K) | 2160p (4K) | 4320p (8K) |
 | ------ | ------ | ------ | ------ | ------ | ------ |
@@ -44,12 +53,22 @@ __Naming Convensions:__
 | ------ | ------ |
 | 30 | 60 |
 
-__Use the "profile" switch__
+## Examples
 
-Windows 4K 60 FPS e.g: mpv.exe --profile=U60
+__Using the "profile" switch__
 
-Windows 1080p 30 FPS e.g: mpv.exe --profile=M30
+### Windows - 4K @ 60 FPS
 
-Linux 4K 60 e.g: mpv --profile=U60
+mpv.exe --profile=U60
 
-Linux 1080p 30 FPS e.g: mpv --profile=M30
+### Windows - 1080p @ 30 FPS
+
+mpv.exe --profile=M30
+
+### Linux - 4K @ 60 FPS
+
+mpv --profile=U60
+
+### Linux - 1080p @ 30 FPS
+
+mpv --profile=M30
