@@ -32,13 +32,13 @@ Using my custom profiles allows for finer grain control over quality and framera
 
 __Naming Convensions:__
 
-| 720p | 1080p | 2160p |
-| ------ | ------ | ------ |
-| Low  | Medium | High | 
+| 480p | 720p | 1080p | 1440p (2.5K) | 2160p (4K) | 4320p (8K) |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| Very Low  | Low | Medium | High | Ultra | Supreme |
 
-| Low | Medium | High |
-| ------ | ------ | ------ |
-| L | M | H | 
+| Very Low  | Low | Medium | High | Ultra | Supreme |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| V | L | M | H | U | S |
 
 | 30 FPS | 60 FPS |
 | ------ | ------ |
@@ -46,10 +46,10 @@ __Naming Convensions:__
 
 __Use the "profile" switch__
 
-Windows 4K 60 FPS e.g: mpv.exe --profile=H60
+Windows 4K 60 FPS e.g: mpv.exe --profile=U60
 
 Windows 1080p 30 FPS e.g: mpv.exe --profile=M30
 
-Linux 4K 60 e.g: mpv --profile=H60
+Linux 4K 60 e.g: mpv --profile=U60
 
 Linux 1080p 30 FPS e.g: mpv --profile=M30
