@@ -1,5 +1,5 @@
 # better-mpv-config
-An improved MPV Player configuration file with:
+An improved MPV Media Player configuration file with:
 - useful defaults
 - profiles
 - no additional cruft...
