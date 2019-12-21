@@ -6,6 +6,8 @@ An improved MPV Media Player configuration file with:
 
 Requires official MPV Player: https://mpv.io/
 
+![usage preview](https://raw.githubusercontent.com/hl2guide/better-mpv-config/master/preview%20image.png)
+
 ## Configuration
 
 ### Windows Users
