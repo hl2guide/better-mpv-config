@@ -1,17 +1,39 @@
 # better-mpv-config
-An improved MPV Media Player configuration file with:
-- useful defaults
-- profiles
-- no additional cruft...
 
-Requires official MPV Player: https://mpv.io/
+Version 1.0 is out! It's an improved MPV Media Player configuration file that:
+
+- has useful defaults
+- offers profiles
+- hides the window title bar
+- auto-hides the cursor after 1 second
+- saves the seekbar position on exit
+- uses an extra large RAM cache
+- normalizes audio
+- sets Color Space, Dithering, Debanding, Subtitles
+- sets Motion Interpolation, Anti-Ringing and Upscaling & Processing
+- now uses shaders for improved visuals
+- improves profiles for https and http protocols
+- adds no additional cruft...
+
+## Requirements
+
+* official MPV Player: https://mpv.io/
+* PC with at least 4GB of RAM
+* PC with integrated (CPU) or discreet GPU (card)
 
 ![usage preview](https://raw.githubusercontent.com/hl2guide/better-mpv-config/master/preview%20image.png)
 
+Includes selected lines from Mike Connelly's work on MPV.
+
+* GitHub Repo: https://github.com/classicjazz/mpv-config
+* Article: https://freetime.mikeconnelly.com/archives/5371
+
 ## Configuration
 
+Please Note: this config will need your own additional work if you happen to use a Mac PC (since Macs only support OpenGL).
+
 ### Windows Users
-Save to the file: `%APPDATA%/mpv/mpv.conf`
+Extract the ZIP in the releases section to the location: `%APPDATA%/mpv/`
 
 ### Linux Users
 * You can put all of the options in configuration files which will be read every time mpv is run.
@@ -25,7 +47,7 @@ Save to the file: `%APPDATA%/mpv/mpv.conf`
 
 ### Vital Notes
 
-If you run into playback issues then remove the __first 5 lines__ and save changes to the file.
+If you run into playback issues then remove the __first 5 lines__ and save changes to the file 'mpv.conf'.
 
 ## Custom Profiles
 This config uses specific naming convensions for shorter easier typing.
