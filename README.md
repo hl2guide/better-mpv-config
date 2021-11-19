@@ -30,26 +30,34 @@ Includes selected lines from Mike Connelly's work on MPV.
 
 ## Configuration
 
-Please Note: this config will need your own additional work if you happen to use a Mac PC (since Macs only support OpenGL).
-
 ### Windows Users
+
 Extract the ZIP in the releases section to the location: `%APPDATA%/mpv/`
 
 ### Linux Users
+
 * You can put all of the options in configuration files which will be read every time mpv is run.
 * The system-wide configuration file 'mpv.conf' is in your configuration directory (e.g. `/etc/mpv` or `/usr/local/etc/mpv`).
 * The user-specific one is `~/.config/mpv/mpv.conf`.
 
+### Mac Users
+
+This config will need your own additional work if you happen to use a Mac PC (since Macs only support OpenGL).
+
+I don't own any Mac PCs to test it so even if I wanted to I could not.
+
 ## Usage
 
-* Save to the correct location (as above) for your Operating System.
+* Extract to the correct location (as above) for your Operating System.
 * Next time MPV is launched, and thereafter the settings should load. (command line or GUI)
+* An initial seek time of 1 second is normal (tested on an old PC with 4 CPU cores) due to new shaders
 
 ### Vital Notes
 
 If you run into playback issues then remove the __first 5 lines__ and save changes to the file 'mpv.conf'.
 
 ## Custom Profiles
+
 This config uses specific naming convensions for shorter easier typing.
 
 By default MPV plays video streams at the highest available quality (even 4K on a 1080p display).
