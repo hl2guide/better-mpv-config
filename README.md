@@ -15,6 +15,20 @@ Version 1.0 is out! It's an improved MPV Media Player configuration file that:
 - improves profiles for https and http protocols
 - adds no additional cruft...
 
+## Credits
+
+Thanks to all the original creators for making awesome shaders and extra work:
+
+* [FSRCNNX](https://github.com/xzpyth/mpv-config/blob/main/shaders/FSRCNNX_x2_8-0-4-1.glsl)
+* [KrigBilateral by Shiandow](https://gist.github.com/igv/a015fc885d5c22e6891820ad89555637)
+* [SSimSuperRes by Shiandow](https://gist.github.com/igv/2364ffa6e81540f29cb7ab4c9bc05b6b)
+* [SSimDownscaler by Shiandow](https://gist.github.com/igv/36508af3ffc84410fe39761d6969be10)
+
+Includes selected lines from Mike Connelly's work on MPV.
+
+* GitHub Repo: https://github.com/classicjazz/mpv-config
+* Article: https://freetime.mikeconnelly.com/archives/5371
+
 ## Requirements
 
 * official MPV Player: https://mpv.io/
@@ -22,11 +36,6 @@ Version 1.0 is out! It's an improved MPV Media Player configuration file that:
 * PC with integrated (CPU) or discreet GPU (card)
 
 ![usage preview](https://raw.githubusercontent.com/hl2guide/better-mpv-config/master/preview%20image.png)
-
-Includes selected lines from Mike Connelly's work on MPV.
-
-* GitHub Repo: https://github.com/classicjazz/mpv-config
-* Article: https://freetime.mikeconnelly.com/archives/5371
 
 ## Configuration
 
