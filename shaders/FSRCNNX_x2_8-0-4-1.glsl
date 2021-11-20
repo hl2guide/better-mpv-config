@@ -1,3 +1,5 @@
+// Source: https://github.com/xzpyth/mpv-config/blob/main/shaders/FSRCNNX_x2_8-0-4-1.glsl
+
 //!HOOK LUMA
 //!WHEN OUTPUT.w LUMA.w / 1.300 > OUTPUT.h LUMA.h / 1.300 > *
 //!DESC feature map 1

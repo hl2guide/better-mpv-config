@@ -1,6 +1,10 @@
-// Revised 11/14/20
-//
-// Copyright (c) 2015-2020, bacondither
+// Source: https://gist.github.com/igv/8a77e4eb8276753b54bb94c1c50c317e
+
+// Requires sigmoid-upscaling=no. Best quality setting (according to objective metrics): curve_height 0.5, overshoot_ctrl true.
+// To use it on-demand add the following line to input.conf: n change-list glsl-shaders toggle "~~/adaptive-sharpen.glsl"
+
+
+// Copyright (c) 2015-2021, bacondither
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -24,7 +28,7 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 // THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-// Adaptive sharpen - version 2020-11-14
+// Adaptive sharpen - version 2021-10-17
 // Tuned for use post-resize, EXPECTS FULL RANGE GAMMA LIGHT (requires ps >= 3.0)
 
 //!HOOK SCALED
@@ -65,7 +69,7 @@
 #define max4(a,b,c,d)  ( max(max(a, b), max(c, d)) )
 
 // Soft if, fast linear approx
-#define soft_if(a,b,c) ( sat((a + b + c + 0.025455)/(maxedge + 0.013636) - 0.85) )
+#define soft_if(a,b,c) ( sat((a + b + c + 0.056/2.5)/(maxedge + 0.03/2.5) - 0.85) )
 
 // Soft limit, modified tanh approx
 #define soft_lim(v,s)  ( sat(abs(v/s)*(27.0 + pow(v/s, 2.0))/(27.0 + 9.0*pow(v/s, 2.0)))*s )
@@ -76,7 +80,7 @@
 // Get destination pixel values
 #define get(x,y)       ( sat(HOOKED_texOff(vec2(x, y)).rgb) )
 #define sat(x)         ( clamp(x, 0.0, 1.0) )
-#define dxdy(val)      ( length(fwidth(val)) ) // edgemul = 2.2
+#define dxdy(val)      ( length(fwidth(val)) ) // =~1/2.5 hq edge without c_comp
 
 #define CtL(RGB)       ( sqrt(dot(RGB*RGB, vec3(0.2126, 0.7152, 0.0722))) )
 
@@ -157,7 +161,7 @@ vec4 hook() {
 
     // Use lower weights for pixels in a more active area relative to center pixel area
     // This results in narrower and less visible overshoots around sharp edges
-    float modif_e0 = 3.0 * e[0] + 0.0090909;
+    float modif_e0 = 3.0 * e[0] + 0.02/2.5;
 
     float weights[12]  = float[](( min(modif_e0/e[1],  dW.y) ),
                                  ( dW.x ),
@@ -184,7 +188,7 @@ vec4 hook() {
 
     for (int pix = 0; pix < 12; ++pix)
     {
-        float lowthr = clamp((29.04*e[pix + 1] - 0.221), 0.01, 1.0);
+        float lowthr = clamp((20.*4.5*c_comp*e[pix + 1] - 0.221), 0.01, 1.0);
 
         neg_laplace += luma[pix+1] * weights[pix] * lowthr;
         weightsum   += weights[pix] * lowthr;
@@ -242,16 +246,14 @@ vec4 hook() {
     float nmin = (min(luma[1],  c0_Y)*3.0 + luma[0])/4.0;
 
     float min_dist  = min(abs(nmax - c0_Y), abs(c0_Y - nmin));
-    float pos_scale = min_dist + L_overshoot;
-    float neg_scale = min_dist + D_overshoot;
+    vec2 pn_scale = vec2(L_overshoot, D_overshoot) + min_dist;
 
-    pos_scale = min(pos_scale, scale_lim*(1.0 - scale_cs) + pos_scale*scale_cs);
-    neg_scale = min(neg_scale, scale_lim*(1.0 - scale_cs) + neg_scale*scale_cs);
+    pn_scale = min(pn_scale, scale_lim*(1.0 - scale_cs) + pn_scale*scale_cs);
 
     // Soft limited anti-ringing with tanh, wpmean to control compression slope
     sharpdiff = (anime_mode ? 0. :
-                wpmean(max(sharpdiff, 0.0), soft_lim( max(sharpdiff, 0.0), pos_scale ), cs.x ))
-              - wpmean(min(sharpdiff, 0.0), soft_lim( min(sharpdiff, 0.0), neg_scale ), cs.y );
+                wpmean(max(sharpdiff, 0.0), soft_lim( max(sharpdiff, 0.0), pn_scale.x ), cs.x ))
+              - wpmean(min(sharpdiff, 0.0), soft_lim( min(sharpdiff, 0.0), pn_scale.y ), cs.y );
 
     float sharpdiff_lim = sat(c0_Y + sharpdiff) - c0_Y;
     float satmul = (c0_Y + max(sharpdiff_lim*0.9, sharpdiff_lim)*1.03 + 0.03)/(c0_Y + 0.03);
