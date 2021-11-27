@@ -1,6 +1,6 @@
 # better-mpv-config
 
-Version 1.0 is out! It's an improved MPV Media Player configuration file that:
+Version 1.0.2 is out! It's an improved MPV Media Player configuration file that:
 
 - has useful defaults
 - offers profiles
