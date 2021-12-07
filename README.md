@@ -101,24 +101,20 @@ The _letter_ referring to the video's __quality level__ and the _number_ the __F
 
 __Using the "profile" switch__
 
-#### Windows
+#### Windows and Linux
 
 4K @ 60 FPS:
 
-`mpv.exe --profile=U60`
+`mpv --profile=U60`
 
 4K @ 30 FPS:
 
-`mpv.exe --profile=U30`
+`mpv --profile=U30`
 
 1080p @ 60 FPS:
 
-`mpv.exe --profile=M60`
+`mpv --profile=M60`
 
 1080p @ 30 FPS:
 
-`mpv.exe --profile=M30`
-
-#### Linux
-
-Same as above but remove the `.exe` in the examples.
+`mpv --profile=M30`
