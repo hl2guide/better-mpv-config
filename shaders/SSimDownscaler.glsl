@@ -49,7 +49,8 @@ vec4 hook() {
         float rel = (pos[axis] - base[axis])*POSTKERNEL_size[axis];
         float w = Kernel(rel);
 
-        avg += w * pow(textureLod(PREKERNEL_raw, pos, 0.0) * PREKERNEL_mul, vec4(2.0));
+        vec4 tex = textureLod(PREKERNEL_raw, pos, 0.0) * PREKERNEL_mul;
+        avg += w * tex * tex;
         W += w;
     }
     avg /= W;

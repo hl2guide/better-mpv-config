@@ -1,8 +1,8 @@
 # better-mpv-config
 
-Version: 1.0.3
+Version: 1.0.4
 
-Last Updated (AEST): 2021-12-08 02:29:36PM
+Last Updated (AEST): 2022-01-23 09:31:59PM
 
 ## Intro
 

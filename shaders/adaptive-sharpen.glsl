@@ -3,7 +3,6 @@
 // Requires sigmoid-upscaling=no. Best quality setting (according to objective metrics): curve_height 0.5, overshoot_ctrl true.
 // To use it on-demand add the following line to input.conf: n change-list glsl-shaders toggle "~~/adaptive-sharpen.glsl"
 
-
 // Copyright (c) 2015-2021, bacondither
 // All rights reserved.
 //
