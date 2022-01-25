@@ -2,13 +2,14 @@
 
 Version: 1.0.5
 
-Last Updated (AEST): 2022-01-25 02:26:20PM
+Last Updated (AEST): 2022-01-25 09:45:56PM
 
 ## What's New
 
 _Version 1.0.5_ adds:
 - meaningful profile descriptions
 - an "alongside" optional mpv.conf (for users who want the config file next to mpv.exe)
+- hotfix for "alongside" config, fixed three paths
 
 ## Intro
 
