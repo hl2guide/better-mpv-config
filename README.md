@@ -1,8 +1,14 @@
 # better-mpv-config
 
-Version: 1.0.4
+Version: 1.0.5
 
-Last Updated (AEST): 2022-01-23 09:31:59PM
+Last Updated (AEST): 2022-01-25 02:26:20PM
+
+## What's New
+
+_Version 1.0.5_ adds:
+- meaningful profile descriptions
+- an "alongside" optional mpv.conf (for users who want the config file next to mpv.exe)
 
 ## Intro
 
@@ -38,8 +44,8 @@ Includes selected lines from Mike Connelly's work on MPV.
 ## Requirements
 
 * official MPV Player: https://mpv.io/
-* PC with at least 4GB of RAM
-* PC with integrated (CPU) or discreet GPU (card)
+* a PC with at least 4GB of RAM
+* a PC with integrated (CPU) or discreet GPU (card)
 
 ![usage preview](https://raw.githubusercontent.com/hl2guide/better-mpv-config/master/preview%20image.png)
 
@@ -63,7 +69,7 @@ I don't own any Mac PCs to test it so even if I wanted to I could not.
 
 ## Usage
 
-* Extract to the correct location (as above) for your Operating System.
+* Extract to the correct location (as above) for your Operating System (pick between _mpv.conf_ and _alongside_, renaming to _mpv.conf_).
 * Next time MPV is launched, and thereafter the settings should load. (command line or GUI)
 * An initial seek time of 1 second is normal (tested on an old PC with 4 CPU cores) due to new shaders
 
@@ -96,6 +102,8 @@ The _letter_ referring to the video's __quality level__ and the _number_ the __F
 | 30 FPS | 60 FPS |
 | ------ | ------ |
 | 30 | 60 |
+
+(The config file now uses meaning descriptions so MPV's OSD and console will be more informative)
 
 ## Examples
 
