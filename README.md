@@ -1,10 +1,13 @@
 # better-mpv-config
 
-Version: 1.0.5
+Version: 1.0.6
 
-Last Updated (AEST): 2022-01-25 09:45:56PM
+Last Updated (AEST): 2022-02-01 01:11:48PM
 
 ## What's New
+
+_Version 1.0.6_ fixes:
+- [profile restore actions](https://mpv.io/manual/stable/#configuration-files-copy-equal)
 
 _Version 1.0.5_ adds:
 - meaningful profile descriptions
