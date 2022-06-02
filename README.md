@@ -1,10 +1,12 @@
 # better-mpv-config
 
-Version: 1.0.6
-
-Last Updated (AEST): 2022-02-01 01:11:48PM
+- Version: 1.0.7
+- Last Updated (AEST): 2022-06-02 01:19:57PM
 
 ## What's New
+
+_Version 1.0.7_:
+- Updated shaders (should improve performance)
 
 _Version 1.0.6_ fixes:
 - [profile restore actions](https://mpv.io/manual/stable/#configuration-files-copy-equal)
