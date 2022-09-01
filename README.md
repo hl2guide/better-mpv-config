@@ -1,9 +1,11 @@
 # better-mpv-config
 
 - Version: 1.0.7
-- Last Updated (AEST): 2022-06-02 01:19:57PM
+- Last Updated (AEST): 2022-09-01 03:32:53PM
 
 ## What's New
+
+- I will add _mpv v3_ support once they provide the first default config to the public
 
 _Version 1.0.7_:
 - Updated shaders (should improve performance)
