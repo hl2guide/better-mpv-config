@@ -5,6 +5,7 @@
 
 ## What's New
 
+- I've personally stopped using MPV since the Windows app and `updater.bat` has problems
 - I will add _mpv v3_ support once they provide the first default config to the public
 
 _Version 1.0.7_:
