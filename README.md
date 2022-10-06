@@ -1,12 +1,15 @@
 # better-mpv-config
 
-- Version: 1.0.7
-- Last Updated (AEST): 2022-09-01 03:32:53PM
+- Version: 1.0.8
+- Last Updated (AEST): 2022-10-06 05:13:43PM
 
 ## What's New
 
-- I've personally stopped using MPV since the Windows app and `updater.bat` has problems
-- I will add _mpv v3_ support once they provide the first default config to the public
+- I've personally stopped using MPV v2 since the Windows app and `updater.bat` has problems
+- I've added a vastly _mpv v3_ config file
+
+_Version 1.0.8_:
+- Added mpv v3 config file
 
 _Version 1.0.7_:
 - Updated shaders (should improve performance)
