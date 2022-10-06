@@ -6,7 +6,7 @@
 ## What's New
 
 - I've personally stopped using MPV v2 since the Windows app and `updater.bat` has problems
-- I've added a vastly _mpv v3_ config file
+- I've added a vastly simplified and elegant _mpv v3_ config file
 
 _Version 1.0.8_:
 - Added mpv v3 config file
