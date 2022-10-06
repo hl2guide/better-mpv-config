@@ -61,7 +61,11 @@ Includes selected lines from Mike Connelly's work on MPV.
 
 ![usage preview](https://raw.githubusercontent.com/hl2guide/better-mpv-config/master/preview%20image.png)
 
-## Configuration
+## Configuration for MPV v3
+
+Just place the `mpv.conf` file next to `mpv.exe`.
+
+## Configuration for older MPV v2
 
 ### Windows Users
 
