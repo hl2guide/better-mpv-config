@@ -1,12 +1,17 @@
 # better-mpv-config
 
 - Version: 1.0.9
-- Last Updated (AEST): 2022-12-26 05:16:56PM
+- Last Updated (AEST): 2023-01-25 11:55:57PM
 
 ## What's New
 
 - I've personally switched to MPV v3m since the Windows app and `updater.bat` has problems for v2.
 - I've added a vastly simplified and elegant _mpv v3_ config file tested on [MPV v3 for Windows](https://sourceforge.net/projects/mpv-player-windows/files/64bit-v3/)
+
+_Version 1.0.9_:
+- Improved seeking
+- Improved autohide
+- Fixed input.conf playlist navigation
 
 _Version 1.0.8_:
 - Added mpv v3 config file
