@@ -5,7 +5,7 @@
 
 ## What's New
 
-- I've personally switched to MPV v3m since the Windows app and `updater.bat` has problems for v2.
+- I've personally switched to MPV v3 since the Windows app and `updater.bat` has problems for v2.
 - I've added a vastly simplified and elegant _mpv v3_ config file tested on [MPV v3 for Windows](https://sourceforge.net/projects/mpv-player-windows/files/64bit-v3/)
 
 _Version 1.0.9_:
