@@ -1,56 +1,62 @@
 # better-mpv-config
 
-- Version: 1.0.9
-- Last Updated (AEST): 2023-01-25 11:55:57PM
+- Version: 1.0.10
+- Last Updated (AEST): 2023-02-10 04:45:17PM
+- Platform: Windows 11 (not tested on Apple or Linux at all)
 
 ## What's New
 
-- I've personally switched to MPV v3 since the Windows app and `updater.bat` has problems for v2.
-- I've added a vastly simplified and elegant _mpv v3_ config file tested on [MPV v3 for Windows](https://sourceforge.net/projects/mpv-player-windows/files/64bit-v3/)
+_Version 1.0.10 (Feb 2023)_:
+- Rewrote `mpv_v3\mpv.conf` and `mpv_v3\input.conf` (adapted from the repo [Argon-/mpv-config](https://github.com/Argon-/mpv-config))
+- Vastly improved terminal, OSD, audio, subtitle, playback and playlist settings
 
-_Version 1.0.9_:
-- Improved seeking
-- Improved autohide
-- Fixed input.conf playlist navigation
+⚠️ Be sure to customize `mpv_v3\mpv.conf` and `mpv_v3\input.conf` manually,
+to make sure that the font and language are valid ⚠️
 
-_Version 1.0.8_:
-- Added mpv v3 config file
+The defaults are:
 
-_Version 1.0.7_:
-- Updated shaders (should improve performance)
+- `Arial` for the subtitle font
+- `en,eng` (English) for the audio and subtitle languages
 
-_Version 1.0.6_ fixes:
-- [profile restore actions](https://mpv.io/manual/stable/#configuration-files-copy-equal)
+See [HISTORY.md](HISTORY.md) for the history of older versions.
 
-_Version 1.0.5_ added:
-- meaningful profile descriptions
-- an "alongside" optional mpv.conf (for users who want the config file next to mpv.exe)
-- a hotfix for "alongside" config, fixed three paths
+- I've personally switched to MPV v3 since the Windows app and `updater.bat` has problems for v2
+- I've added a vastly better _mpv v3_ config file tested on [MPV v3 for Windows](https://sourceforge.net/projects/mpv-player-windows/files/64bit-v3/)
 
 ## Intro
 
-This is an improved MPV Media Player configuration file (and shaders folder) that:
+This is an improved MPV Media Player v3 configuration file that:
 
 - has useful defaults
-- hides the window title bar
-- auto-hides the cursor after 1 second
+- auto-hides the cursor after 200ms (when fullscreen)
+- disables autoplay
+- enables fast seeking
+- improves OSD messages and style (moves progress bar to the top)
 - saves the seekbar position on exit
-- uses an extra large RAM cache
-- normalizes audio
+- sets max volume (100%) and default volume (70%)
+- sets subtitle font to `Arial` and sets the color to off-yellow
+- sets the HLS bitrate to maximum
+- sets the default audio language and subtitle language to `en,eng`
+- has been tested on Windows 11 only (not tested on Apple or Linux)
 - adds no additional cruft...
 
 ## Requirements
 
-* official MPV Player: https://mpv.io/
-* a PC with at least 4GB of RAM
+* official MPV Player: https://mpv.io/ - [download MPV v3](https://sourceforge.net/projects/mpv-player-windows/files/64bit-v3/)
+* a PC with at least 4GB of RAM (8GB or more recommended)
 * a PC with integrated (CPU) or discreet GPU (card)
 
-![usage preview](https://raw.githubusercontent.com/hl2guide/better-mpv-config/master/preview%20image.png)
+## Credits
+
+* Some files are based off of the repo [Argon-/mpv-config](https://github.com/Argon-/mpv-config) by [Argon- (Julian)](https://github.com/Argon-)
 
 ## Configuration for MPV v3
 
-Just place the `mpv.conf` file next to `mpv.exe`.
+1. place the `mpv.conf` file next to `mpv.exe`
+2. (Optional) for many changed keybindings, place the `input.conf` file next to `mpv.exe`
 
 ## Configuration for older MPV v2
+
+Not recommended.
 
 See [README](README_V2.md) for MPV v2.
