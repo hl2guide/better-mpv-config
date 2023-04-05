@@ -6,6 +6,8 @@
 
 ## What's New
 
+- Removed legacy config file
+
 _Version 1.0.10 (Feb 2023)_:
 - Rewrote `mpv_v3\mpv.conf` and `mpv_v3\input.conf` (adapted from the repo [Argon-/mpv-config](https://github.com/Argon-/mpv-config))
 - Vastly improved terminal, OSD, audio, subtitle, playback and playlist settings
