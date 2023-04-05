@@ -1,7 +1,7 @@
 # better-mpv-config
 
 - Version: 1.0.10
-- Last Updated (AEST): 2023-02-10 04:45:17PM
+- Last Updated (AEST): 2023-04-05 11:13:00PM
 - Platform: Windows 11 (not tested on Apple or Linux at all)
 
 ## What's New
@@ -54,9 +54,3 @@ This is an improved MPV Media Player v3 configuration file that:
 
 1. place the `mpv.conf` file next to `mpv.exe`
 2. (Optional) for many changed keybindings, place the `input.conf` file next to `mpv.exe`
-
-## Configuration for older MPV v2
-
-Not recommended.
-
-See [README](README_V2.md) for MPV v2.
