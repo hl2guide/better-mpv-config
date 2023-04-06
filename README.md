@@ -46,7 +46,7 @@ This is an improved MPV Media Player v3 configuration file that:
 
 * official MPV Player: https://mpv.io/ - [download MPV v3](https://sourceforge.net/projects/mpv-player-windows/files/64bit-v3/)
 * a PC with at least 4GB of RAM (8GB or more recommended)
-* a PC with integrated (CPU) or discreet GPU (card)
+* a PC with integrated (CPU) or discrete GPU (card)
 
 ## Credits
 
