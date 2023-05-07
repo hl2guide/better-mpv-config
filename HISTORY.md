@@ -1,4 +1,14 @@
 
+_Version 1.0.12 (May 2023)_:
+- Made videos start fullscreen on the primary screen
+- Made the video window stay open after video playback (allows for drag and drop of video files)
+- Added profiles for some file extensions (animations and static images)
+- Removed legacy MPV v2 config file
+
+_Version 1.0.10 (Feb 2023)_:
+- Rewrote `mpv_v3\mpv.conf` and `mpv_v3\input.conf` (adapted from the repo [Argon-/mpv-config](https://github.com/Argon-/mpv-config))
+- Vastly improved terminal, OSD, audio, subtitle, playback and playlist settings
+
 _Version 1.0.9 (Jan 2023)_:
 - Improved seeking
 - Improved autohide
