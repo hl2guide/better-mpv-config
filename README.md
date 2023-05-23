@@ -1,7 +1,7 @@
 # better-mpv-config
 
 - Version: 1.1.00
-- Last Updated (AEST): 2023-05-23 05:42:00PM
+- Last Updated (AEST): 2023-05-23 11:26:27PM
 - Target Platform: Windows 11 (not tested on Apple or Linux at all)
 - Test PC: Old Quad Core Desktop
     - CPU: Intel(R) Core(TM) i5-4690 CPU @ 3.50GHz
@@ -10,6 +10,23 @@
     - OS: Windows 11 Pro 22H2 (unsupported hardware)
 
 ## What's New
+
+_Version 1.1.10 [UNLRELEASED]_
+- Will fix upscaler shaders to only apply to videos lower that 1080p
+
+In the meantime please add this code to `mpv_shaders.conf`:
+
+```
+[upscale-lowres-using-GPU-shaders]
+profile-desc=Upscales low resolution videos using GPU upscaling shaders.
+profile-cond=height < 1080
+```
+
+above the line:
+
+```
+# Adaptive-directional sharpening algorithm shaders.
+```
 
 _Version 1.1.00 (May 23, 2023)_
 - Added shaders
