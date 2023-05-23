@@ -1,8 +1,13 @@
 # better-mpv-config
 
 - Version: 1.1.00
-- Last Updated (AEST): 2023-05-23 05:16:37PM
-- Platform: Windows 11 (not tested on Apple or Linux at all)
+- Last Updated (AEST): 2023-05-23 05:42:00PM
+- Target Platform: Windows 11 (not tested on Apple or Linux at all)
+- Test PC: Old Quad Core Desktop
+    - CPU: Intel(R) Core(TM) i5-4690 CPU @ 3.50GHz
+    - RAM: 32.0 GB (31.9 GB usable)
+    - GPU: NVidia GeForce GTX 1060 6GB (Gigabyte)
+    - OS: Windows 11 Pro 22H2 (unsupported hardware)
 
 ## What's New
 
