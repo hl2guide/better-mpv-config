@@ -1,20 +1,20 @@
 # better-mpv-config
 
-- Version: 1.0.12
-- Last Updated (AEST): 2023-05-07 11:54:35PM
+- Version: 1.1.00
+- Last Updated (AEST): 2023-05-23 05:16:37PM
 - Platform: Windows 11 (not tested on Apple or Linux at all)
 
 ## What's New
 
-_Version 1.0.12 (May 2023)_:
-- Made videos start fullscreen on the primary screen
-- Made the video window stay open after video playback (allows for drag and drop of video files)
-- Added profiles for some file extensions (animations and static images)
-- Removed legacy MPV v2 config file
-
-_Version 1.0.10 (Feb 2023)_:
-- Rewrote `mpv_v3\mpv.conf` and `mpv_v3\input.conf` (adapted from the repo [Argon-/mpv-config](https://github.com/Argon-/mpv-config))
-- Vastly improved terminal, OSD, audio, subtitle, playback and playlist settings
+_Version 1.1.00 (May 23, 2023)_
+- Added shaders
+    - SSimDownscaler by [igv](https://gist.github.com/igv/36508af3ffc84410fe39761d6969be10)
+    - SSimSuperRes by [igv](https://gist.github.com/igv/2364ffa6e81540f29cb7ab4c9bc05b6b)
+    - KrigBilateral by [igv](https://gist.github.com/igv/a015fc885d5c22e6891820ad89555637)
+    - Nvidia Adaptive-directional sharpening algorithm shader by [agyild](https://gist.github.com/agyild/7e8951915b2bf24526a9343d951db214)
+    - Contrast Adaptive Sharpening (CAS) by [agyild](https://gist.github.com/agyild/bbb4e58298b2f86aa24da3032a0d2ee6)
+    - FidelityFX Super Resolution (FSR) by [agyild](https://gist.github.com/agyild/82219c545228d70c5604f865ce0b0ce5)
+- Split config file into six files (organized and easier toggling)
 
 ## Important Notes
 
@@ -27,6 +27,8 @@ The defaults are:
 - `en,eng` (English) for the audio and subtitle languages
 
 See [HISTORY.md](HISTORY.md) for the history of older versions.
+
+As of version 1.1.00 please check the other `.conf` files as well.
 
 📝 I suggest that you have a read of my __mpv.conf__ and alter it to your liking. 📝
 
@@ -46,7 +48,9 @@ This is an improved MPV Media Player v3 configuration file that:
 - sets max volume (100%) and default volume (70%)
 - sets subtitle font to `Arial` and sets the color to off-yellow
 - sets the HLS bitrate to maximum
-- sets the default audio language and subtitle language to `en,eng`
+- sets the default video, audio, and subtitle language to `en,eng`
+- uses shaders to improve, upscale and downscale videos
+    - CAS, FSR, KrigBilateral, SSimDownscaler and SSimSuperRes
 - has been tested on Windows 11 only (not tested on Apple or Linux)
 - adds no additional cruft...
 
@@ -59,8 +63,12 @@ This is an improved MPV Media Player v3 configuration file that:
 ## Credits
 
 * Some files are based off of the repo [Argon-/mpv-config](https://github.com/Argon-/mpv-config) by [Argon- (Julian)](https://github.com/Argon-)
+* Inspired by [mpv-config](https://github.com/Zabooby/mpv-config) by [Zabooby](https://github.com/Zabooby)
+* Shaders by [igv](https://gist.github.com/igv) and [agyild](https://gist.github.com/agyild/)
 
 ## Configuration for MPV v3
 
-1. place the `mpv.conf` file next to `mpv.exe`
-2. (Optional) for many changed keybindings, place the `input.conf` file next to `mpv.exe`
+0. Download the latest release
+1. Extract the `.conf` files and `shaders` folder next to `mpv.exe`
+2. Delete `input.conf` if desired (custom keybindings)
+3. Delete or comment out the include line for `mpv_shaders.conf` if your GPU cannot handle the shaders
