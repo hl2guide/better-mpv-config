@@ -12,7 +12,7 @@
 ## What's New
 
 _Version 1.1.10 (May 23, 2023)_
-- HOTFIX: Fixed upscaler shaders to only apply to videos lower that 1080p
+- HOTFIX: Fixed upscaler shaders to only apply to videos lower than 1080p
 
 _Version 1.1.00 (May 23, 2023)_
 - Added shaders
