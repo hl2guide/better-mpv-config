@@ -1,7 +1,7 @@
 # better-mpv-config
 
 - Version: 1.1.10
-- Last Updated (AEST): 2023-05-23 11:26:27PM
+- Last Updated (AEST): 2023-08-08 21:33
 - Target Platform: Windows 10 (not tested on Apple or Linux at all)
 - Test PC: Old Quad Core Desktop
     - CPU: Intel(R) Core(TM) i5-4690 CPU @ 3.50GHz
