@@ -7,7 +7,7 @@
     - CPU: Intel(R) Core(TM) i5-4690 CPU @ 3.50GHz
     - RAM: 32.0 GB (31.9 GB usable)
     - GPU: NVidia GeForce GTX 1060 6GB (Gigabyte)
-    - OS: Windows 11 Pro 22H2 (unsupported hardware)
+    - OS: Windows 10 Pro 22H2
 
 ## What's New
 
@@ -59,7 +59,7 @@ This is an improved MPV Media Player v3 configuration file that:
 - sets the default video, audio, and subtitle language to `en,eng`
 - uses shaders to improve, upscale and downscale videos
     - CAS, FSR, KrigBilateral, SSimDownscaler and SSimSuperRes
-- has been tested on Windows 11 only (not tested on Apple or Linux)
+- has been tested on Windows 10 and 11 only (not tested on Apple or Linux)
 - adds no additional cruft...
 
 ## Requirements
