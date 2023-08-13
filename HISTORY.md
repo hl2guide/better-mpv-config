@@ -1,4 +1,10 @@
 
+_Version 1.1.25 (Aug 13, 2023)_
+- Fixed all console messages and implemented stricter MPV pathing for HOME_PATH
+- Improved optional `input.conf` with quiet mode seeking and other minor changes
+- Disabled `hwdec` for the moment while MPV seems to enable it by default
+- Check out the new install instructions below (Configuration for MPV v3)
+
 _Version 1.1.00 (May 23, 2023)_
 - Added shaders
     - SSimDownscaler by [igv](https://gist.github.com/igv/36508af3ffc84410fe39761d6969be10)
