@@ -15,6 +15,7 @@ _Version 1.1.25 (Aug 13, 2023)_
 - Fixed all console messages and implemented stricter MPV pathing for HOME_PATH
 - Improved optional `input.conf` with quiet mode seeking and other minor changes
 - Disabled `hwdec` for the moment while MPV seems to enable it by default
+- Check new install instructions below (Configuration for MPV v3)
 
 _Version 1.1.10 (May 23, 2023)_
 - HOTFIX: Fixed upscaler shaders to only apply to videos lower than 1080p
@@ -82,6 +83,6 @@ This is an improved MPV Media Player v3 configuration file that:
 ## Configuration for MPV v3
 
 0. Download the latest release
-1. Extract the `.conf` files and `shaders` folder next to `mpv.exe`
+1. Extract the `configs` and `shaders` folders next to `mpv.exe`
 2. Delete `input.conf` if desired (custom keybindings)
-3. Delete or comment out the include line for `mpv_shaders.conf` if your GPU cannot handle the shaders
+3. In `mpv.conf` delete or comment out the include line for `configs\mpv_shaders.conf` if your GPU cannot handle the shaders
