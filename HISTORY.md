@@ -5,6 +5,9 @@ _Version 1.1.25 (Aug 13, 2023)_
 - Disabled `hwdec` for the moment while MPV seems to enable it by default
 - Check out the new install instructions below (Configuration for MPV v3)
 
+Version 1.1.10 (May 23, 2023)
+- HOTFIX: Fixed upscaler shaders to only apply to videos lower than 1080p
+
 _Version 1.1.00 (May 23, 2023)_
 - Added shaders
     - SSimDownscaler by [igv](https://gist.github.com/igv/36508af3ffc84410fe39761d6969be10)
