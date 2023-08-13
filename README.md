@@ -1,7 +1,7 @@
 # better-mpv-config
 
-- Version: 1.1.10
-- Last Updated (AEST): 2023-08-08 21:33
+- Version: 1.1.25
+- Last Updated (AEST): 2023-08-13 06:38:55PM
 - Target Platform: Windows 10 (not tested on Apple or Linux at all)
 - Test PC: Old Quad Core Desktop
     - CPU: Intel(R) Core(TM) i5-4690 CPU @ 3.50GHz
@@ -10,6 +10,11 @@
     - OS: Windows 10 Pro 22H2
 
 ## What's New
+
+_Version 1.1.25 (Aug 13, 2023)_
+- Fixed all console messages and implemented stricter MPV pathing for HOME_PATH
+- Improved optional `input.conf` with quiet mode seeking and other minor changes
+- Disabled `hwdec` for the moment while MPV seems to enable it by default
 
 _Version 1.1.10 (May 23, 2023)_
 - HOTFIX: Fixed upscaler shaders to only apply to videos lower than 1080p
