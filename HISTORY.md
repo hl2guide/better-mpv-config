@@ -1,4 +1,12 @@
 
+_Version 1.2.1 (Sept 27, 2023)_
+- Split shaders into two sets (big improvement to quality of GPU shaders)
+    - NVidia
+    - AMD and Intel
+- Improved `input.conf`
+    - new keys for playback speed
+    - upscaler shader mode
+
 _Version 1.1.25 (Aug 13, 2023)_
 - Fixed all console messages and implemented stricter MPV pathing for HOME_PATH
 - Improved optional `input.conf` with quiet mode seeking and other minor changes
