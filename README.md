@@ -94,4 +94,5 @@ This is an improved MPV Media Player v3 configuration file that:
 1. Extract the `configs` and `shaders` folders next to `mpv.exe`
 2. Extract the `mpv.conf` and `input.conf` files next to `mpv.exe`
 3. Delete `input.conf` if desired (custom keybindings)
-4. If your GPU cannot handle the shaders in `mpv.conf`, delete or comment out the include line for `configs\mpv_shaders.conf`
+4. In the `mpv.conf` file toggle the include line for the type of GPU you use (defaults to NVidia)
+5. If your GPU cannot handle the shaders in `mpv.conf`, delete or comment out the include line for `configs\mpv_shaders.conf`
