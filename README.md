@@ -9,6 +9,12 @@
     - GPU: NVidia GeForce GTX 1060 6GB (Gigabyte)
     - OS: Windows 10 Pro 22H2
 
+## Upcoming
+
+Version 1.3 may be ready before the end of December.
+
+It is slated to include useful fixes, better defaults and some cleanup.
+
 ## What's New
 
 _Version 1.2.1 (Sept 27, 2023)_
