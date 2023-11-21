@@ -1,25 +1,22 @@
 # better-mpv-config
 
 - Version: 1.3
-- Last Updated (AEST): 2023-11-21 09:20:39PM
-- Target Platform: Windows 10 (not tested on Apple or Linux at all)
+- Last Updated (AEST): 2023-11-21 09:37:22PM
+- Target Platform: Windows 10 or later (not tested on Apple or Linux at all)
 - Test PC: New Intel i9 Desktop
-    - CPU: Intel i9-13900K @ 3.50GHz
-    - RAM: 64G
+    - CPU: Intel i9-13900K @ 3GHz
+    - RAM: 64GB
     - GPU: NVidia GeForce GTX 4060 12GB
     - OS: Windows 11 Pro 23H2
-
-## Upcoming
-
-Version 1.3 may be ready before the end of December.
-
-It is slated to include useful fixes, better defaults and some cleanup.
 
 ## What's New
 
 _Version 1.3 (Nov 21, 2023)_
+- Changed default player behaviour to keep it open after a video/playlist ends
 - Improved `input.conf` for easier seeking
--
+- Updated `mpv.conf` to default base shaders `SSimDownscaler`, `SSimSuperRes`, `KrigBilateral` to off
+    - I did this since in testing I noticed over-sharpening and ghosting
+- Added easy activation of `uosc` in `mpv_osd.conf` (default is off)
 
 _Version 1.2.1 (Sept 27, 2023)_
 - Split shaders into two sets (big improvement to quality of GPU shaders)
