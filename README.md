@@ -6,7 +6,7 @@
 - Test PC: New Intel i9 Desktop
     - CPU: Intel i9-13900K @ 3GHz
     - RAM: 64GB
-    - GPU: NVidia GeForce RTX 4060 12GB
+    - GPU: NVidia GeForce RTX 4070 12GB
     - OS: Windows 11 Pro 23H2
 
 ## What's New
