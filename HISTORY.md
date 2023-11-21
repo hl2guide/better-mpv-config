@@ -1,4 +1,11 @@
 
+_Version 1.3 (Nov 21, 2023)_
+- Changed default player behaviour to keep it open after a video/playlist ends
+- Improved `input.conf` for easier seeking
+- Updated `mpv.conf` to default base shaders `SSimDownscaler`, `SSimSuperRes`, `KrigBilateral` to off
+    - I did this since in testing I noticed over-sharpening and ghosting
+- Added easy activation of `uosc` in `mpv_osd.conf` (default is off)
+
 _Version 1.2.1 (Sept 27, 2023)_
 - Split shaders into two sets (big improvement to quality of GPU shaders)
     - NVidia
