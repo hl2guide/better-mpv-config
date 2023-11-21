@@ -5,7 +5,7 @@
 - Target Platform: Windows 10 (not tested on Apple or Linux at all)
 - Test PC: New Intel i9 Desktop
     - CPU: Intel i9-13900K @ 3.50GHz
-    - RAM: 32.0 GB (31.9 GB usable)
+    - RAM: 64G
     - GPU: NVidia GeForce GTX 4060 12GB
     - OS: Windows 11 Pro 23H2
 
