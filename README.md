@@ -1,13 +1,13 @@
 # better-mpv-config
 
-- Version: 1.2.1
-- Last Updated (AEST): 2023-09-27 12:53:18AM
+- Version: 1.3
+- Last Updated (AEST): 2023-11-21 09:20:39PM
 - Target Platform: Windows 10 (not tested on Apple or Linux at all)
-- Test PC: Old Quad Core Desktop
-    - CPU: Intel(R) Core(TM) i5-4690 CPU @ 3.50GHz
+- Test PC: New Intel i9 Desktop
+    - CPU: Intel i9-13900K @ 3.50GHz
     - RAM: 32.0 GB (31.9 GB usable)
-    - GPU: NVidia GeForce GTX 1060 6GB (Gigabyte)
-    - OS: Windows 10 Pro 22H2
+    - GPU: NVidia GeForce GTX 4060 12GB
+    - OS: Windows 11 Pro 23H2
 
 ## Upcoming
 
@@ -16,6 +16,10 @@ Version 1.3 may be ready before the end of December.
 It is slated to include useful fixes, better defaults and some cleanup.
 
 ## What's New
+
+_Version 1.3 (Nov 21, 2023)_
+- Improved `input.conf` for easier seeking
+-
 
 _Version 1.2.1 (Sept 27, 2023)_
 - Split shaders into two sets (big improvement to quality of GPU shaders)
