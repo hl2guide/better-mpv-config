@@ -1,12 +1,12 @@
 # better-mpv-config
 
 - Version: 1.3
-- Last Updated (AEST): 2023-11-21 09:37:22PM
+- Last Updated (AEST): 2023-11-21 10:00:24PM
 - Target Platform: Windows 10 or later (not tested on Apple or Linux at all)
 - Test PC: New Intel i9 Desktop
     - CPU: Intel i9-13900K @ 3GHz
     - RAM: 64GB
-    - GPU: NVidia GeForce GTX 4060 12GB
+    - GPU: NVidia GeForce RTX 4060 12GB
     - OS: Windows 11 Pro 23H2
 
 ## What's New
