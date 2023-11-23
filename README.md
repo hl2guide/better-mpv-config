@@ -16,7 +16,7 @@ _Version 1.3 (Nov 21, 2023)_
 - Improved `input.conf` for easier seeking
 - Updated `mpv.conf` to default base shaders `SSimDownscaler`, `SSimSuperRes`, `KrigBilateral` to off
     - I did this since in testing I noticed over-sharpening and ghosting
-- Added easy activation of `uosc` in `mpv_osd.conf` (default is off)
+- Added easy activation of [uosc](https://github.com/tomasklaen/uosc) in `mpv_osd.conf` (default is off)
 
 See [HISTORY.md](HISTORY.md) for the history of older versions.
 
