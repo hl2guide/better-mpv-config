@@ -14,10 +14,13 @@
 _June 2024_
 
 📢
+
 ⚠️
+
 - Please note that am archiving this repo and plan to no longer do any more work on it
 - As of June 2024 I'm getting better results using MPC-HC on Windows 11 with advanced config settings
 - Thanks for your interest
+
 ⚠️
 
 _Version 1.3 (Nov 21, 2023)_
