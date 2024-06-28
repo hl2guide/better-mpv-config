@@ -1,7 +1,7 @@
 # better-mpv-config
 
 - Version: 1.3
-- Last Updated (AEST): 2023-11-21 10:00:24PM
+- Last Updated (AEST): 2024-06-28 04:00:00PM
 - Target Platform: Windows 10 or later (not tested on Apple or Linux at all)
 - Test PC: New Intel i9 Desktop
     - CPU: Intel i9-13900K @ 3GHz
@@ -9,7 +9,16 @@
     - GPU: NVidia GeForce RTX 4070 12GB
     - OS: Windows 11 Pro 23H2
 
-## What's New
+## History
+
+_June 2024_
+
+📢
+⚠️
+- Please note that am archiving this repo and plan to no longer do any more work on it
+- As of June 2024 I'm getting better results using MPC-HC on Windows 11 with advanced config settings
+- Thanks for your interest
+⚠️
 
 _Version 1.3 (Nov 21, 2023)_
 - Changed default player behaviour to keep it open after a video/playlist ends
